@@ -10,7 +10,7 @@ Bu hafta görsel kısmını yaptım: 3 fotoğraf modeli ve 2 video modeli. Metin
 | Gemini | Nano Banana |
 | Claude | Opus 5.5 |
 
-Fotoğrafları bu modellerle ürettim. Videoları ChatGPT ve Gemini uygulamalarından aldım.
+Fotoğrafları ve videoları aynı modellerle ürettim. Video için sadece ChatGPT (GPT Sol) ve Gemini (Nano Banana) ile denedim, Claude video üretemiyor.
 
 ## Prompt (3 modele de aynen verildi, yeni sohbet, ilk sonuç)
 
@@ -45,8 +45,8 @@ Aynı oran: üç modelde de 16:9 çıktı.
 
 | Model | Süre | Hareket | Tutarlılık | Maliyet | Toplam /10 |
 |---|---|---|---|---|---|
-| Gemini | 10 sn | 3 | 4 | Ücretli | **7** |
-| ChatGPT | 9 sn | 1 | 5 | Ücretli | **6** |
+| Gemini (Nano Banana) | 10 sn | 3 | 4 | Ücretli | **7** |
+| ChatGPT (GPT Sol) | 9 sn | 1 | 5 | Ücretli | **6** |
 
 İkisi de 1280x720 (16:9) çıktı. Claude video üretemediği için sadece iki modelle denedim.
 
