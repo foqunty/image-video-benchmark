@@ -6,6 +6,10 @@ Bu hafta görsel kısmını yaptım: 3 fotoğraf modeli ve 2 video modeli. Metin
 
 > A rainy evening at a ferry pier in Istanbul. In the foreground, a university student holds a red umbrella and a plain notebook with a blank cover, no text anywhere. Behind them, a ferry with warm lit windows and the Galata Tower on the skyline. Realistic photograph, warm street lamp light, wet reflections on the ground, 16:9.
 
+### Video prompt'u (fotoğraf prompt'unun devamı)
+
+> Same scene. The student closes the red umbrella and walks toward the ferry while the ferry slowly docks at the pier. Light rain, steady camera, realistic motion.
+
 ## Puanlama ölçütü (önceden yazdım, her biri 1-5)
 
 - **Sadakat:** kırmızı şemsiye, vapur, Galata Kulesi, yağmur ve ıslak zemin yansıması var mı?
