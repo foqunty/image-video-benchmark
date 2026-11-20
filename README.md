@@ -2,6 +2,16 @@
 
 Bu hafta görsel kısmını yaptım: 3 fotoğraf modeli ve 2 video modeli. Metin modellerini yapmadım.
 
+## Kullandığım modeller
+
+| Araç | Model |
+|---|---|
+| ChatGPT | GPT Sol |
+| Gemini | Nano Banana |
+| Claude | Opus 5.5 |
+
+Fotoğrafları bu modellerle ürettim. Videoları ChatGPT ve Gemini uygulamalarından aldım.
+
 ## Prompt (3 modele de aynen verildi, yeni sohbet, ilk sonuç)
 
 > A rainy evening at a ferry pier in Istanbul. In the foreground, a university student holds a red umbrella and a plain notebook with a blank cover, no text anywhere. Behind them, a ferry with warm lit windows and the Galata Tower on the skyline. Realistic photograph, warm street lamp light, wet reflections on the ground, 16:9.
@@ -27,9 +37,9 @@ Aynı oran: üç modelde de 16:9 çıktı.
 
 | Model | Sadakat | Yazı | Yüz/detay | Maliyet | Toplam /15 |
 |---|---|---|---|---|---|
-| Gemini | 5 | 5 | 5 | Ücretli | **15** |
-| ChatGPT | 4 | 5 | 4 | Ücretli | **13** |
-| Claude | 2 | 5 | 2 | Ücretli | **9** |
+| Gemini (Nano Banana) | 5 | 5 | 5 | Ücretli | **15** |
+| ChatGPT (GPT Sol) | 4 | 5 | 4 | Ücretli | **13** |
+| Claude (Opus 5.5) | 2 | 5 | 2 | Ücretli | **9** |
 
 ### Video
 
