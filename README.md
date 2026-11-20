@@ -1,6 +1,6 @@
 # Görsel Prompt Benchmark
 
-Bu hafta sadece görsel kısmını yaptım (3 fotoğraf modeli). Metin modelleri ve video kısmını yapmadım.
+Bu hafta görsel kısmını yaptım: 3 fotoğraf modeli ve 2 video modeli. Metin modellerini yapmadım.
 
 ## Prompt (3 modele de aynen verildi, yeni sohbet, ilk sonuç)
 
@@ -12,19 +12,31 @@ Bu hafta sadece görsel kısmını yaptım (3 fotoğraf modeli). Metin modelleri
 - **Yazı:** prompt'ta "no text anywhere" dedim, defterin ya da başka bir yerin üstünde yazı çıkmış mı?
 - **Yüz/detay:** yüz ve eller doğal mı, görüntü gerçekçi bir fotoğraf gibi mi?
 - **Maliyet:** ücretli mi, ücretsiz mi? Üçünü de ücretli abonelikle kullandım.
-- **Hareket ve tutarlılık:** bunlar video için, video yapmadığım için puanlamadım.
+- **Hareket (video):** istenen hareket gerçekten oluyor mu, yoksa görüntü duruyor mu?
+- **Tutarlılık (video):** kişi, şemsiye ve vapur karelerde aynı kalıyor mu?
 
 Aynı oran: üç modelde de 16:9 çıktı.
 
 ## Sonuçlar
 
-| Model | Sadakat | Yazı | Yüz/detay | Maliyet | Hareket | Tutarlılık | Toplam /15 |
-|---|---|---|---|---|---|---|---|
-| Gemini | 5 | 5 | 5 | Ücretli | - | - | **15** |
-| ChatGPT | 4 | 5 | 4 | Ücretli | - | - | **13** |
-| Claude | 2 | 5 | 2 | Ücretli | - | - | **9** |
+### Fotoğraf
 
-Toplam sadakat, yazı ve yüz/detayın toplamı. Hareket ve tutarlılık video olmadığı için boş.
+| Model | Sadakat | Yazı | Yüz/detay | Maliyet | Toplam /15 |
+|---|---|---|---|---|---|
+| Gemini | 5 | 5 | 5 | Ücretli | **15** |
+| ChatGPT | 4 | 5 | 4 | Ücretli | **13** |
+| Claude | 2 | 5 | 2 | Ücretli | **9** |
+
+### Video
+
+| Model | Süre | Hareket | Tutarlılık | Maliyet | Toplam /10 |
+|---|---|---|---|---|---|
+| Gemini | 10 sn | 3 | 4 | Ücretli | **7** |
+| ChatGPT | 9 sn | 1 | 5 | Ücretli | **6** |
+
+İkisi de 1280x720 (16:9) çıktı. Claude video üretemediği için sadece iki modelle denedim.
+
+### Fotoğraflar
 
 **ChatGPT** ![ChatGPT](gorseller/chatgpt.jpg)
 
@@ -32,6 +44,18 @@ Toplam sadakat, yazı ve yüz/detayın toplamı. Hareket ve tutarlılık video o
 
 **Claude** ![Claude](gorseller/claude.jpg)
 
+### Videolar
+
+- ChatGPT: [videolar/chatgpt.mp4](videolar/chatgpt.mp4)
+- Gemini: [videolar/gemini.mp4](videolar/gemini.mp4)
+
+| | Başı | Sonu |
+|---|---|---|
+| ChatGPT | ![ChatGPT baş](videolar/kareler/chatgpt-bas.jpg) | ![ChatGPT son](videolar/kareler/chatgpt-son.jpg) |
+| Gemini | ![Gemini baş](videolar/kareler/gemini-bas.jpg) | ![Gemini son](videolar/kareler/gemini-son.jpg) |
+
 ## Yorum
 
 Üç modele de aynı prompt'u verdim. Bence en iyisi Gemini oldu, çünkü gerçekten çekilmiş bir fotoğraf gibiydi: yağmurdaki ışıklar, ıslak zemin ve kişinin duruşu daha doğaldı, prompt'taki "gerçekçi fotoğraf" isteğine en yakın olan oydu. Küçük eksikleri vardı, Galata Kulesi küçük kaldı ve şemsiye kadrajdan taştı. ChatGPT de çok iyiydi, kırmızı şemsiye, vapur, Galata Kulesi ve yağmur hepsi vardı, ama bana fazla parlak ve sinematik, yani biraz yapay göründü. Claude'un çıktısı en kötüsüydü, çünkü fotoğraf yerine düz bir çizim yaptı, kule Galata'ya değil de fenere benziyordu ve kişinin yüzü yoktu. Üçünde de defterin üstüne yazı koymadılar, bu kısmı hepsi doğru yaptı. Beni şaşırtan şey Claude'un bir görsel modeli olmaması, çizimi muhtemelen kodla yaptı. O yüzden fotoğraf testinde adil bir karşılaştırma olmadı.
+
+Videoda ChatGPT en kötüsüydü. 9 saniyede neredeyse hiçbir şey olmadı, ilk ve son kareler aynı gibi, sadece yağmur yağıyor ve kamera azıcık yaklaşıyor. Kız ve vapur tutarlıydı ama hareket yoktu, yani fotoğrafa biraz yağmur eklenmiş gibi. Gemini ortalama bir sonuç verdi: kamera döndü, adam yana dönüp yüzü göründü, defter açıldı, ama vapurun iskeleye yanaşması gibi büyük bir hareket olmadı.
