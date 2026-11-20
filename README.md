@@ -1,4 +1,4 @@
-# Görsel Prompt Benchmark
+# Görsel ve Video Benchmark
 
 Bu hafta görsel kısmını yaptım: 3 fotoğraf modeli ve 2 video modeli. Metin modellerini yapmadım.
 
